@@ -46,12 +46,3 @@ let usersApi (storage: UserStorage) =
             | false -> return false
         }
     }
-
-// let todosApi (storage : TodosStorage) =
-//     { getTodos = fun () -> async { return storage.GetTodos() }
-//       addTodo =
-//         fun todo -> async {
-//             match storage.AddTodo todo with
-//             | Ok () -> return todo
-//             | Error e -> return failwith e
-//         } }
